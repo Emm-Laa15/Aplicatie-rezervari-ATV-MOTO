@@ -5,6 +5,7 @@ const atv2Controller = require('../controllers/atv2Controller');
 const atv3Controller = require('../controllers/atv3Controller');
 const atv4Controller = require('../controllers/atv4Controller');
 const bicicleta1Controller = require('../controllers/bicicleta1Controller');
+const bicicleta2Controller = require('../controllers/bicicleta2Controller');
 
 
 router.get('/atv1', atv1Controller.getReservations);
@@ -34,10 +35,18 @@ router.put('/atv4/:id', atv4Controller.updateReservation);
 router.delete('/atv4/:id', atv4Controller.deleteReservation);
 router.get('/atv4/user/:email', atv4Controller.getUserReservations);
 
+
 router.get('/bicicleta1', bicicleta1Controller.getReservations);
 router.post('/bicicleta1', bicicleta1Controller.createReservation);
 router.put('/bicicleta1/:id', bicicleta1Controller.updateReservation);
 router.delete('/bicicleta1/:id', bicicleta1Controller.deleteReservation);
 router.get('/bicicleta1/user/:email', bicicleta1Controller.getUserReservations);
+
+
+router.get('/bicicleta2', bicicleta2Controller.getReservations);
+router.post('/bicicleta2', bicicleta2Controller.createReservation);
+router.put('/bicicleta2/:id', bicicleta2Controller.updateReservation);
+router.delete('/bicicleta2/:id', bicicleta2Controller.deleteReservation);
+router.get('/bicicleta2/user/:email', bicicleta2Controller.getUserReservations);
 
 module.exports = router;

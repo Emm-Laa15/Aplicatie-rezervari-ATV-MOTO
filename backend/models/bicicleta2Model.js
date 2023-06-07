@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid')
 
 const reservationSchema = new mongoose.Schema({
   
-  atv1Model: {
+  bicicleta2Model: {
     type: String,
     required: true,
   },
@@ -27,12 +27,8 @@ const reservationSchema = new mongoose.Schema({
     type: Number,
     required: false,
   },
-  id: {
-    type: String,
-    default: uuidv4,
-  }
 })
 
-const Reservation = mongoose.model('AB-21-BRS', reservationSchema)
+const Reservation = mongoose.model('FIVE-STARS-26', reservationSchema)
 
 module.exports = Reservation

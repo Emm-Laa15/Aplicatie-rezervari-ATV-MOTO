@@ -20,6 +20,7 @@ import RezervareNouaATV2 from './pages/RezervareNouaATV2'
 import RezervareNouaATV3 from './pages/RezervareNouaATV3'
 import RezervareNouaATV4 from './pages/RezervareNouaATV4'
 import RezervareNouaBicicleta1 from './pages/RezervareNouaBicicleta1'
+import RezervareNouaBicicleta2 from './pages/RezervareNouaBicicleta2'
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             <Route path="/rezervare-noua/ATV3" element={<RezervareNouaATV3 />} />
             <Route path="/rezervare-noua/ATV4" element={<RezervareNouaATV4 />} />
             <Route path="/rezervare-noua/Bicicleta1" element={<RezervareNouaBicicleta1 />} />
+            <Route path="/rezervare-noua/Bicicleta2" element={<RezervareNouaBicicleta2 />} />
             <Route path="/programarile-mele" element={<ProgramarileMele />} />
           </Routes>
         </div>
